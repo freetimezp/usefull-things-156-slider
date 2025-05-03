@@ -98,7 +98,7 @@ a {
 
 .nav-item-wrapper.active .nav-item {
     width: 50%;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 2px solid rgb(210, 103, 16);
 }
 
 .slides {
@@ -119,6 +119,11 @@ a {
     align-items: center;
 }
 
+.slide.active {
+    opacity: 1;
+    z-index: 3;
+}
+
 .slide .img {
     width: 50%;
     height: 50%;
@@ -129,6 +134,8 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: relative;
+    z-index: 2;
 }
 
 .slide-title {
